@@ -61,8 +61,7 @@ Google Colab with NVCC Compiler
 16. End of Algorithm
 
 ## PROGRAM:
-
-```
+```cuda
 !pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
 %load_ext nvcc4jupyter
 %%writefile mattran.cu
@@ -73,7 +72,8 @@ Google Colab with NVCC Compiler
 
 #ifndef _COMMON_H
 #define _COMMON_H
-
+```
+```
 #define CHECK(call)                                                            \
 {                                                                              \
     const cudaError_t error = call;                                            \
